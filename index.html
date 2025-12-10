@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 700px;
+            border: solid 2px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #img{
+            height: 250px;
+            border: solid 5px;
+        }
+        .box{
+            background-color: rgb(234, 178, 197);
+            border: solid 5px black;
+            width: 400px;
+            height: 500px;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 20px 10px 5px black;
+        }
+        h1{
+            text-shadow: 5px 2px 2px white;
+        }
+        p{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box2{
+            color: red;
+            align-self: start;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running  rightMovement;
+        }
+        .box3{
+            color: red;
+            align-self: end;
+            position: relative;
+            animation: 5s linear 1s infinite alternate none running  leftMovement;
+        }
+            @keyframes rightMovement {
+                from{
+                    top: 0;
+                    left: 0;
+                }
+                to{
+                    top: 0;
+                    left: 650px;
+                }
+            }
+            @keyframes leftMovement {
+                from{
+                    top: 0;
+                    left: 650px;
+                }
+                to{
+                    top: 0;
+                    left: 0;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box2">
+            <h5>
+                MAHARANA_PRATAP!!
+            </h5>
+        </div>
+        <div class="box3">
+            <h5>
+                TRUE_WARRIOR!!
+            </h5>
+        </div>
+        <div class="box">
+            <img id="img" src="image.png" alt="img">
+            <h1>
+                Maharana Pratap(True Hero)
+            </h1>
+            <p>
+                Maharana Pratap is best known for his resistance against the Mughal Empire, particularly Emperor and is considered a symbol of Rajput valor and is remembered for his bravery as well as for his unyielding spirit in defending his kingdom.His greatest battle was fought against the Mughals in the Battle of Haldighati in 1576.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
